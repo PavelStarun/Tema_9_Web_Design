@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт с блюдами</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <header class="bg-primary text-white p-3">
+    <div class="container">
+      <h1 class="display-4">Сайт с блюдами</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:63342/Tema_9_Web_Design/VD03.html?_ijt=87lh9709fj2qqhlc1qcjt361pl&_ij_reload=RELOAD_ON_SAVE">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-section">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-section">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container my-4">
+    <div id="carouselExample" class="carousel slide my-5" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="foto/Цыпленок с соусом парментье.png" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+          <img src="foto/колдуны.jpg" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+          <img src="foto/жареная рыба.png" class="d-block w-100" alt="Slide 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="foto/колдуны.jpg" class="card-img-top" alt="колдуны">
+                    <div class="card-body">
+                        <h5 class="card-title">Колдуны</h5>
+                        <p class="card-text">Блюдо традиционной белорусской, литовской и польской кухонь.</p>
+                        <a href="https://recipes.handmade39.ru/2021/11/17/kalduny/" class="btn btn-primary">Перейти к рецепту</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="foto/Мясо по-французски.jpg" class="card-img-top" alt="Мясо по-французски">
+                    <div class="card-body">
+                        <h5 class="card-title">Мясо по-французски</h5>
+                        <p class="card-text">Блюдо русской кухни, приготовленное из слоёв мяса (первоначально телятина, позднее также свинина или говядина), картофеля и сыра.</p>
+                        <a href="https://www.nur.kz/food/recipes/1679369-myaso-po-francuzski-s-farshem-v-dukhovke/" class="btn btn-primary">Перейти к рецепту</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="foto/жареная рыба.png" class="card-img-top" alt="Жареная рыба">
+                    <div class="card-body">
+                        <h5 class="card-title">Жареная рыба</h5>
+                        <p class="card-text">Обобщающее название рыбных блюд и кулинарных изделий, приготавливаемых жареньем.</p>
+                        <a href="https://www.nur.kz/food/useful-tips/1803476-kak-pozarit-rybu-pravilno-v-zavisimosti-ot-vida/" class="btn btn-primary">Перейти к рецепту</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div class="accordion my-4" class="carousel slide my-5" id="accordionExample">
+      <div class="accordion-item">
+        <h1 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Первое блюдо
+          </button>
+        </h1>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Это традиционное начало обеда или ужина, которое в большинстве кухонь мира подается в виде супа, бульона или других жидких блюд.
+              Оно включает в себя разнообразные варианты, такие как овощные, мясные, рыбные супы, борщи, щи, солянки и многие другие.</p>
+              <h5>Польза первых блюд:</h5>
+                <h6>Гидратация: </h6>
+                  <p>Первые блюда, как правило, содержат большое количество жидкости, что помогает поддерживать водный баланс организма.</p>
+              <h6>Питательность: </h6>
+                  <p>В зависимости от ингредиентов, супы могут быть богаты витаминами, минералами, белками и другими необходимыми питательными веществами.</p>
+              <h6>Легкое усвоение: </h6>
+                  <p>Жидкая форма первых блюд делает их легче усваиваемыми и подходит для людей с проблемами пищеварения.</p>
+              <h6>Согревающий эффект:</h6>
+                  <p>Горячие супы особенно полезны в холодное время года, так как помогают согреться и поддерживают общий тонус организма.</p>
+              <h6>Снижение аппетита:</h6>
+                  <p>Первые блюда могут помочь снизить аппетит, что способствует контролю за весом и предотвращает переедание.</p>
+              <h6>Разнообразие рациона:</h6>
+                  <p>Включение первых блюд в ежедневный рацион способствует его разнообразию и обогащению различными вкусами и текстурами.</p>
+              <h6>Успокаивающее действие:</h6>
+                  <p>Теплые и ароматные супы могут оказывать успокаивающее действие, способствуя расслаблению и улучшению настроения.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Второе блюдо
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Это основное блюдо обеда или ужина, которое обычно включает в себя более сытные и питательные компоненты, чем первое блюдо.
+              В зависимости от культуры и предпочтений, второе блюдо может быть мясным, рыбным, овощным или комбинированным.</p>
+              <h5>Польза вторых блюд:</h5>
+                <h6>Питательность: </h6>
+                  <p>Вторые блюда часто богаты белками, жирами, витаминами и минералами, что способствует сытости и поддерживает общее здоровье.</p>
+              <h6>Энергия и выносливость: </h6>
+                  <p>Белки из мяса или других источников, содержащихся во вторых блюдах, являются важными строительными блоками для тканей и клеток, а также источниками энергии.</p>
+              <h6>Многообразие питания: </h6>
+                  <p>Вторые блюда позволяют включать различные виды продуктов в рацион, что обогащает питание разнообразием макро- и микроэлементов.</p>
+              <h6>Удовлетворение аппетита:</h6>
+                  <p>Более сытные и питательные вторые блюда помогают удовлетворить аппетит и предотвратить переедание.</p>
+              <h6>Поддержание мышечной массы:</h6>
+                  <p>Белки из вторых блюд важны для поддержания и роста мышечной массы, что особенно важно для людей, ведущих активный образ жизни или занимающихся спортом.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Напитки
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>После первого и второго блюда можно выбирать различные напитки в зависимости от личных предпочтений и потребностей организма.
+                Вот несколько вариантов напитков, которые часто употребляются после еды:</p>
+            <h6>Вода</h6>
+              <p>Это самый простой и полезный выбор. Вода помогает увлажнить организм, поддерживает пищеварение и является идеальным вариантом для тех, кто хочет избегать лишних калорий и сахара.</p>
+            <h6>Чай</h6>
+              <p>Чай может быть как черным, так и зеленым. Он содержит антиоксиданты, которые могут помочь в усвоении пищи и улучшении общего состояния. Черный чай также может помочь в улучшении пищеварения благодаря содержанию танинов.</p>
+            <h6>Компот</h6>
+              <p>Это напиток на основе вареных сухофруктов, часто сладкий и ароматный. Он богат витаминами и минералами, идеально подходит для того, чтобы утолить жажду после еды.</p>
+            <h6>Соки</h6>
+              <p>Натуральные фруктовые или овощные соки предоставляют организму витамины и минералы, необходимые для поддержания здоровья. Однако стоит предпочитать соки без добавления сахара, чтобы избежать лишних калорий.</p>
+            <h6>Молоко</h6>
+              <p>Напиток, богатый белком и кальцием. Молоко или молочные продукты могут быть полезны после употребления более сытных блюд, так как они способствуют лучшему усвоению питательных веществ.</p>
+            <h6>Пробиотические напитки</h6>
+              <p>Кефир, йогуртные напитки или кисломолочные напитки могут помочь в поддержании здоровой микрофлоры кишечника и улучшении пищеварения.</p>
+          </div>
+        </div>
+      </div>
+      <section id="about-section" class="my-5">
+          <h2>О нас</h2>
+          <p>Добро пожаловать на наш сайт рецептов! Мы страстные кулинары, стремящиеся поделиться с вами лучшими рецептами со всего мира. Наши блюда тщательно отобраны, чтобы удовлетворить вкусы каждого, от новичков до опытных шеф-поваров. Мы верим, что готовка — это искусство, и наша миссия — вдохновить вас на создание кулинарных шедевров на вашей кухне. Присоединяйтесь к нам в этом вкусном путешествии и откройте для себя новые гастрономические горизонты!</p>
+      </section>
+    </div>
+  </main>
+
+    <footer id="contact-section" class="bg-dark text-white p-4">
+    <div class="container">
+      <p>Контактная информация: email@example.com, телефон: +1234567890</p>
+      <p>Социальные сети:
+        <a href="#" class="text-white">Facebook</a>,
+        <a href="#" class="text-white">Twitter</a>,
+        <a href="#" class="text-white">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
