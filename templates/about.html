@@ -8,9 +8,9 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
             <div class="card">
-                <img src="../static/image/cybertruck.jpg" class="card-img-top" alt="Сybertruck">
+                <img src="{{ url_for('static', filename='image/cybertruck.jpg') }}" class="card-img-top" alt="Сybertruck">
                 <div class="card-body">
                     <h5 class="card-title">Tesla Сybertruck</h5>
                     <p class="card-text">Качественный и футуристичный электромобиль.</p>
@@ -18,10 +18,9 @@
                 </div>
             </div>
         </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
             <div class="card">
-                <img src="../static/image/modelS.jpg" class="card-img-top" alt="Tesla Model S">
+                <img src="{{ url_for('static', filename='image/modelS.jpg') }}" class="card-img-top" alt="Tesla Model S">
                 <div class="card-body">
                     <h5 class="card-title">Tesla Model S Performance</h5>
                     <p class="card-text">Самый быстрый, безопасный и технологичный электромобиль.</p>
@@ -29,10 +28,9 @@
                 </div>
             </div>
         </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
             <div class="card">
-                <img src="../static/image/zeekr001.jpg" class="card-img-top" alt="Zeekr 001">
+                <img src="{{ url_for('static', filename='image/zeekr001.jpg') }}" class="card-img-top" alt="Zeekr 001">
                 <div class="card-body">
                     <h5 class="card-title">Zeekr 001</h5>
                     <p class="card-text">Качественный китайский электромобиль.</p>

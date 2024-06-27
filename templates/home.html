@@ -1,4 +1,4 @@
-{% extends 'base.html' %}{% extends 'base.html' %}
+{% extends 'base.html' %}
 
 {% block title %}
     Автомобили на ДВС
@@ -8,94 +8,37 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
             <div class="card">
-                <img src="../static/image/cybertruck.jpg" class="card-img-top" alt="Сybertruck">
+                <img src="{{ url_for('static', filename='image/Exeed VX.jpg') }}" class="card-img-top" alt="Exeed VX">
                 <div class="card-body">
-                    <h5 class="card-title">Tesla Сybertruck</h5>
-                    <p class="card-text">Качественный и футуристичный электромобиль.</p>
-                    <a href="https://www.tesla.com/cybertruck" class="btn btn-primary">Перейти на сайт</a>
+                    <h5 class="card-title">Exeed VX</h5>
+                    <p class="card-text">Первоклассные категории комфорта и безопасности.</p>
+                    <a href="https://www.exeedinternational.com/models/vx/index.shtml" class="btn btn-primary">Перейти на сайт</a>
                 </div>
             </div>
         </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
             <div class="card">
-                <img src="../static/image/modelS.jpg" class="card-img-top" alt="Tesla Model S">
+                <img src="{{ url_for('static', filename='image/Cadillac XT5.jpg') }}" class="card-img-top" alt="Cadillac XT5">
                 <div class="card-body">
-                    <h5 class="card-title">Tesla Model S Performance</h5>
-                    <p class="card-text">Самый быстрый, безопасный и технологичный электромобиль.</p>
-                    <a href="https://www.tesla.com/models" class="btn btn-primary">Перейти на сайт</a>
+                    <h5 class="card-title">Cadillac XT5</h5>
+                    <p class="card-text">Роскошный компактный внедорожник.</p>
+                    <a href="https://www.cadillac.com/suvs/xt5" class="btn btn-primary">Перейти на сайт</a>
                 </div>
             </div>
         </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
             <div class="card">
-                <img src="../static/image/zeekr001.jpg" class="card-img-top" alt="Zeekr 001">
+                <img src="{{ url_for('static', filename='image/audi sq7 tdi.jpg') }}" class="card-img-top" alt="Audi SQ7 TDI">
                 <div class="card-body">
-                    <h5 class="card-title">Zeekr 001</h5>
-                    <p class="card-text">Качественный китайский электромобиль.</p>
-                    <a href="https://www.zeekr.eu/" class="btn btn-primary">Перейти на сайт</a>
+                    <h5 class="card-title">Audi SQ7 TDI</h5>
+                    <p class="card-text">Мощный и универсальный.</p>
+                    <a href="https://www.audi.com.sg/sg/web/en/models/q7/sq7.html" class="btn btn-primary">Перейти на сайт</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-{% endblock %}
-
-
-    {% block title %}
-        Автомобили на ДВС
-
-    {% endblock %}
-
-{% block content %}
-
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Заголовок карточки</h5>
-        <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
-        <a href="#" class="btn btn-primary">Перейти на сайт</a>
-      </div>
-    </div>
-
-
-    <main class="container mt-4">
-        <h2>Автомобили на ДВС</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="electric1.jpg" class="card-img-top" alt="Electric Car 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Электромобиль 1</h5>
-                        <p class="card-text">Описание электромобиля 1.</p>
-                        <a href="#" class="btn btn-primary">Купить</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="electric2.jpg" class="card-img-top" alt="Electric Car 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Электромобиль 2</h5>
-                        <p class="card-text">Описание электромобиля 2.</p>
-                        <a href="#" class="btn btn-primary">Купить</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="electric3.jpg" class="card-img-top" alt="Electric Car 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Электромобиль 3</h5>
-                        <p class="card-text">Описание электромобиля 3.</p>
-                        <a href="#" class="btn btn-primary">Купить</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
 {% endblock %}
