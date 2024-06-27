@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Текущие дата и время</title>
+    <script>
+        let intervalId;
+
+        function updateTime(timezone = null) {
+            clearInterval(intervalId);
+            if (timezone) {
+                intervalId = setInterval(() => {
+                    const now = new Date();
+                    const options = { timeZone: timezone, hour12: false };
+                    const formattedTime = now.toLocaleString('en-GB', options);
+                    document.getElementById('time').innerText = formattedTime;
+                }, 1000);
+            } else {
+                intervalId = setInterval(() => {
+                    const now = new Date();
+                    const formattedTime = now.toLocaleString();
+                    document.getElementById('time').innerText = formattedTime;
+                }, 1000);
+            }
+        }
+
+        window.onload = () => updateTime();
+    </script>
+</head>
+<body>
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Текущие дата и время:</h1>
+                </div>
+                <div class="modal-body">
+                    <h2 id="time"></h2>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="updateTime()">Мое время</button>
+                    <button type="button" class="btn btn-secondary" onclick="updateTime('Europe/London')">Лондон</button>
+                    <button type="button" class="btn btn-primary" onclick="updateTime('America/New_York')">Нью-Йорк</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
